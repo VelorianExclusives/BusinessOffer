@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Velorian | Build Your Online Business</title>
+
+  <meta
+    name="description"
+    content="Discover the Velorian online business opportunity combining e-commerce, dropshipping and entrepreneurship."
+  >
+
+  <meta property="og:title" content="Build Your Online Business With Velorian">
+  <meta
+    property="og:description"
+    content="Watch the presentation and discover how the Velorian business model works."
+  >
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-light: #0d1b2e;
+      --card: #101f34;
+      --card-hover: #142944;
+      --primary: #4f8cff;
+      --primary-dark: #2468df;
+      --accent: #58e6b1;
+      --white: #ffffff;
+      --text: #dbe7f5;
+      --muted: #91a4bb;
+      --border: rgba(255,255,255,0.10);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* -------------------------
+       NAVIGATION
+    ------------------------- */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7,17,31,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--white);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 85px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 50% -20%,
+          rgba(79,140,255,0.30),
+          transparent 55%
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(88,230,177,0.08);
+      border-radius: 50%;
+      filter: blur(90px);
+      top: 20%;
+      left: -150px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 15px;
+      border: 1px solid rgba(88,230,177,0.35);
+      background: rgba(88,230,177,0.08);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      margin: 0 auto 22px;
+      color: var(--white);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -2.5px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 34px;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--muted);
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 26px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 10px 30px rgba(79,140,255,0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border-color: var(--border);
+      color: var(--white);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* -------------------------
+       VIDEO
+    ------------------------- */
+
+    .video-section {
+      padding: 30px 0 100px;
+    }
+
+    .video-wrapper {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        rgba(79,140,255,0.45),
+        rgba(88,230,177,0.20)
+      );
+      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-caption {
+      text-align: center;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* -------------------------
+       SECTIONS
+    ------------------------- */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-header .label {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-header h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    /* -------------------------
+       CARDS
+    ------------------------- */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(79,140,255,0.35);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(79,140,255,0.12);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: var(--white);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* -------------------------
+       BUSINESS MODEL
+    ------------------------- */
+
+    .dark-section {
+      background: var(--bg-light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .split h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .split p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 25px 0 30px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      margin: 14px 0;
+      color: var(--text);
+    }
+
+    .check {
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .business-box {
+      padding: 40px;
+      border-radius: 20px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(79,140,255,0.13),
+          rgba(88,230,177,0.06)
+        );
+      border: 1px solid var(--border);
+    }
+
+    .business-box h3 {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    /* -------------------------
+       AUDIENCE
+    ------------------------- */
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .audience-item {
+      padding: 25px 20px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.025);
+    }
+
+    .audience-item strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: 7px;
+    }
+
+    .audience-item span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* -------------------------
+       CTA
+    ------------------------- */
+
+    .cta {
+      padding: 100px 0;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(79,140,255,0.20),
+          transparent 60%
+        );
+    }
+
+    .cta-box {
+      max-width: 850px;
+      margin: auto;
+      padding: 60px 30px;
+      border: 1px solid rgba(79,140,255,0.25);
+      border-radius: 24px;
+      background: rgba(16,31,52,0.75);
+    }
+
+    .cta h2 {
+      color: white;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto 30px;
+    }
+
+    .messenger-button {
+      background: #0084ff;
+      box-shadow: 0 12px 35px rgba(0,132,255,0.25);
+    }
+
+    .messenger-button:hover {
+      background: #0074e5;
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------
+       FAQ
+    ------------------------- */
+
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    details {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 22px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      padding: 0 22px 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* -------------------------
+       DISCLAIMER
+    ------------------------- */
+
+    .disclaimer {
+      padding: 45px 0;
+      background: #050c16;
+      border-top: 1px solid var(--border);
+    }
+
+    .disclaimer p {
+      max-width: 950px;
+      margin: auto;
+      color: #73859b;
+      text-align: center;
+      font-size: 0.78rem;
+      line-height: 1.7;
+    }
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+
+    footer {
+      padding: 35px 0;
+      background: #040a12;
+      text-align: center;
+    }
+
+    footer p {
+      color: #65778c;
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: var(--primary);
+    }
+
+    /* -------------------------
+       RESPONSIVE
+    ------------------------- */
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-button {
+        padding: 9px 13px;
+        font-size: 0.78rem;
+      }
+
+      .hero {
+        padding: 75px 0 60px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .business-box {
+        padding: 28px 22px;
+      }
+
+      .cta-box {
+        padding: 45px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#" class="logo">
+        Velorian<span>.</span>
+      </a>
+
+      <a
+        href="https://www.facebook.com/profile.php?id=61593306981223"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-button"
+      >
+        Message Me
+      </a>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        ONLINE BUSINESS • E-COMMERCE • ENTREPRENEURSHIP
+      </div>
+
+      <h1>
+        Build Your
+        <span>Online Business</span>
+        With Velorian
+      </h1>
+
+      <p>
+        Discover an online business model combining e-commerce,
+        dropshipping and entrepreneurship — and see whether
+        Velorian could be a fit for your goals.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#presentation" class="btn btn-primary">
+          ▶ Watch the Presentation
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61593306981223"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          💬 Message Me
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       VIDEO
+  ========================== -->
+
+  <section id="presentation" class="video-section">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="label">
+          Start Here
+        </div>
+
+        <h2>
+          Watch the Presentation
+        </h2>
+
+        <p>
+          Take a few minutes to understand the business model,
+          products and opportunity before deciding whether
+          you'd like to learn more.
+        </p>
+
+      </div>
+
+      <div class="video-wrapper">
+
+        <div class="video-container">
+
+          <iframe
+            src="https://www.youtube.com/embed/nE3iOL_UP64"
+            title="Velorian Business Presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+
+      <p class="video-caption">
+        Watch the presentation first. Then message me with your questions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHAT YOU'LL DISCOVER
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="label">
+          The Opportunity
+        </div>
+
+        <h2>
+          What You'll Discover
+        </h2>
+
+        <p>
+          The goal isn't to make a decision from a headline.
+          It's to understand the model first.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">🛒</div>
+
+          <h3>
+            E-Commerce
+          </h3>
+
+          <p>
+            Explore an online business model built around
+            promoting and selling products through digital channels.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📦</div>
+
+          <h3>
+            Dropshipping
+          </h3>
+
+          <p>
+            Learn how the dropshipping model can allow products
+            to be marketed online without operating a traditional
+            retail inventory setup.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🚀</div>
+
+          <h3>
+            Entrepreneurship
+          </h3>
+
+          <p>
+            Discover an opportunity to develop your online
+            marketing, sales, communication and entrepreneurial skills.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BUSINESS MODEL
+  ========================== -->
+
+  <section class="dark-section">
+
+    <div class="container">
+
+      <div class="split">
+
+        <div>
+
+          <div class="section-header"
+               style="text-align:left;margin:0 0 25px;">
+
+            <div class="label">
+              Explore The Model
+            </div>
+
+            <h2>
+              Turn Your Online Presence Into a Business Opportunity
+            </h2>
+
+          </div>
+
+          <p>
+            Today's entrepreneurs have access to tools and
+            platforms that make it possible to build businesses
+            online and reach customers beyond their local area.
+          </p>
+
+          <p>
+            Velorian offers a business model that combines
+            products, e-commerce and dropshipping with an
+            entrepreneurial opportunity.
+          </p>
+
+          <ul class="check-list">
+
+            <li>
+              <span class="check">✓</span>
+              Learn about the business model
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Explore available products
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Learn how online promotion works
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Decide for yourself if it's a fit
+            </li>
+
+          </ul>
+
+          <a href="#presentation" class="btn btn-primary">
+            Watch the Presentation
+          </a>
+
+        </div>
+
+
+        <div class="business-box">
+
+          <h3>
+            Your First Step Is Simple
+          </h3>
+
+          <p>
+            Don't try to understand everything from a social
+            media post or a short message.
+          </p>
+
+          <p>
+            Watch the full presentation, learn how the model
+            works, and then contact me if you have questions.
+          </p>
+
+          <p>
+            I'll be happy to walk you through the information
+            and help you understand the next steps.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHO IS IT FOR
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="label">
+          Who Should Explore This?
+        </div>
+
+        <h2>
+          Is This For You?
+        </h2>
+
+        <p>
+          You don't need to have everything figured out.
+          Curiosity and willingness to learn are a good place to start.
+        </p>
+
+      </div>
+
+
+      <div class="audience-grid">
+
+        <div class="audience-item">
+          <strong>🚀 Aspiring Entrepreneurs</strong>
+          <span>
+            You want to build something of your own.
+          </span>
+        </div>
+
+        <div class="audience-item">
+          <strong>📱 Digital Builders</strong>
+          <span>
+            You're interested in social media and online business.
+          </span>
+        </div>
+
+        <div class="audience-item">
+          <strong>🧠 Lifelong Learners</strong>
+          <span>
+            You want to develop business and marketing skills.
+          </span>
+        </div>
+
+        <div class="audience-item">
+          <strong>💡 Opportunity Seekers</strong>
+          <span>
+            You're open to exploring different business models.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================== -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div class="eyebrow">
+          HAVE QUESTIONS?
+        </div>
+
+        <h2>
+          Let's Talk About It.
+        </h2>
+
+        <p>
+          If you've watched the presentation and want to
+          understand the business model, products, requirements
+          or next steps, send me a message.
+        </p>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61593306981223"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn messenger-button"
+        >
+          💬 Message Me on Facebook
+        </a>
+
+        <p style="margin-top:18px;margin-bottom:0;font-size:0.85rem;">
+          No pressure. Ask your questions and make an informed decision.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FAQ
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="label">
+          Questions
+        </div>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+
+      <div class="faq">
+
+        <details>
+
+          <summary>
+            Do I need previous business experience?
+          </summary>
+
+          <p>
+            Previous entrepreneurship experience isn't required
+            to learn about the opportunity. Like any business,
+            however, building skills, consistency and knowledge
+            takes time and effort.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What is dropshipping?
+          </summary>
+
+          <p>
+            Dropshipping is an e-commerce fulfillment model in
+            which a seller can market products without maintaining
+            traditional retail inventory. The exact process and
+            requirements depend on the platform and supplier.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What products are available?
+          </summary>
+
+          <p>
+            Product availability can change. Watch the presentation
+            for the current information and contact me if you want
+            clarification about the products available through
+            the Velorian opportunity.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How much can I earn?
+          </summary>
+
+          <p>
+            There are no guaranteed earnings. Results can vary
+            significantly based on factors including effort,
+            skills, sales ability, market conditions, expenses,
+            time invested and other individual circumstances.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Is this a job?
+          </summary>
+
+          <p>
+            No. This should be evaluated as a business opportunity,
+            not as a guaranteed job or salary.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What should I do after watching the presentation?
+          </summary>
+
+          <p>
+            If you're interested or simply have questions,
+            click the Messenger button and contact me through
+            the Velorian Products and Businesses Facebook Page.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DISCLAIMER
+  ========================== -->
+
+  <section class="disclaimer">
+
+    <div class="container">
+
+      <p>
+        <strong>Important Information:</strong>
+        This website is for informational and educational purposes
+        regarding a business opportunity. It does not constitute
+        a guarantee of income, financial results or business success.
+        Individual results vary and depend on many factors including
+        skills, effort, time, expenses, market conditions and other
+        circumstances. Please review the company's current policies,
+        terms, costs, compensation information and applicable
+        disclosures before making a business decision.
+        Product availability, brands and business terms may change.
+        This page is independently presented by the page owner and
+        should not be interpreted as a guarantee or representation
+        of future results.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © <span id="year"></span> Velorian Products and Businesses
+      </p>
+
+      <p style="margin-top:8px;">
+        <a
+          href="https://www.facebook.com/profile.php?id=61593306981223"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook Page
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
